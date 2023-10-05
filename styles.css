@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Titan+One&display=swap');
+/* font-family: 'Bad Script', cursive;
+font-family: 'Titan One', cursive; */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Bad Script', cursive;
+  display: flex;
+  justify-content: center;
+
+  background: radial-gradient(
+    circle at 0% 0.5%,
+    rgb(103, 103, 137) 0.1%,
+    rgb(182, 201, 221) 100.2%
+  );
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  background-image: linear-gradient(
+    103.3deg,
+    rgb(190, 11, 215) -18.7%,
+    rgb(246, 234, 11) 90.9%
+  );
+  border-radius: 20px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  width: 1200px;
+  height: 600px;
+}
+
+.buttons-container {
+  width: 900px;
+  height: 400px;
+  display: grid;
+  place-content: center;
+  gap: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: white;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 10px 0 rgba(100, 100, 100, 0.25);
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.btnJuegoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  gap: 20px;
+}
+
+.marcador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #c5c5c5;
+  place-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  background-image: linear-gradient(
+    103.3deg,
+    rgb(190, 11, 215) -18.7%,
+    rgb(246, 234, 11) 90.9%
+  );
+  border-radius: 10px;
+}
+
+p,
+span {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-right: 15px;
+  margin-top: 15px;
+  font-family: inherit;
+  font-weight: bold;
+  border: 1px;
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 2px 2px 5px #c5c5c5, -3px -3px 5px #ffffff, 2px 2px 5px #c5c5c5,
+    -3px -3px 5px #0c0c0c;
+  cursor: pointer;
+}
+
+button::before {
+  content: '';
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    103.3deg,
+    rgb(190, 11, 215) -18.7%,
+    rgb(246, 234, 11) 90.9%
+  );
+  transition: 0.3s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 9em;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+}
+
+.resetBtn {
+  display: grid;
+  place-content: center;
+  margin-top: 10px;
+}
+
+.resetBtn button {
+  background-image: linear-gradient(
+    103.3deg,
+    rgb(190, 11, 215) -18.7%,
+    rgb(246, 234, 11) 90.9%
+  );
+  font-family: inherit;
+  border: 1px;
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 2px 2px 5px #ffffff, -3px -3px 5px #ffffff;
+  font-weight: bold;
+}
